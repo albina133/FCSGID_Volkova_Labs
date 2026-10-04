@@ -16,3 +16,8 @@
 Для хранения изображения используется файл ресурсов `resources.qrc`, поэтому картинка является частью проекта и корректно загружается при запуске приложения.
 
 Основная логика программы реализована через обработку нажатия кнопки: после события `clicked` в `QLabel` устанавливается изображение вместо текста.
+
+<img width="799" height="626" alt="image" src="https://github.com/user-attachments/assets/fd8dd727-3278-49e6-9c6f-7c4faa193414" />
+<img width="798" height="626" alt="image" src="https://github.com/user-attachments/assets/13a07b8b-cb48-422a-91d9-b0dcf59e3dbb" />
+
+
