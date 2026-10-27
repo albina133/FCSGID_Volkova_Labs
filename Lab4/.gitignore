@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+*.pyproject.user
+canvas_autosave.png
