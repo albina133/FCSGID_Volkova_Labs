@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>620</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab3</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin"><number>16</number></property>
+    <property name="topMargin"><number>16</number></property>
+    <property name="rightMargin"><number>16</number></property>
+    <property name="bottomMargin"><number>16</number></property>
+    <property name="spacing"><number>12</number></property>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="horizontalSpacing"><number>12</number></property>
+      <property name="verticalSpacing"><number>12</number></property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn1">
+        <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+        <property name="text"><string>bt1 - SELECT name</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboColumns">
+        <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+        <property name="placeholderText"><string>Выберите колонку sqlite_master</string></property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btn2">
+        <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+        <property name="text"><string>bt2 - Первая таблица</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btn3">
+        <property name="minimumSize"><size><width>0</width><height>38</height></size></property>
+        <property name="text"><string>bt3 - Вторая таблица</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex"><number>0</number></property>
+      <widget class="QWidget" name="tab1">
+       <attribute name="title"><string>Tab1</string></attribute>
+       <layout class="QVBoxLayout" name="layoutTab1">
+        <item><widget class="QTableView" name="table1"/></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab2">
+       <attribute name="title"><string>Tab2</string></attribute>
+       <layout class="QVBoxLayout" name="layoutTab2">
+        <item><widget class="QTableView" name="table2"/></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab3">
+       <attribute name="title"><string>Tab3</string></attribute>
+       <layout class="QVBoxLayout" name="layoutTab3">
+        <item><widget class="QTableView" name="table3"/></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab4">
+       <attribute name="title"><string>Tab4</string></attribute>
+       <layout class="QVBoxLayout" name="layoutTab4">
+        <item><widget class="QTableView" name="table4"/></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab5">
+       <attribute name="title"><string>Tab5</string></attribute>
+       <layout class="QVBoxLayout" name="layoutTab5">
+        <item><widget class="QTableView" name="table5"/></item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuMenu">
+    <property name="title"><string>Menu</string></property>
+    <addaction name="actionSetConnection"/>
+    <addaction name="actionCloseConnection"/>
+    <addaction name="separator"/>
+    <addaction name="actionCustomQuery"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSetConnection">
+   <property name="text"><string>Set connection</string></property>
+  </action>
+  <action name="actionCloseConnection">
+   <property name="text"><string>Close connection</string></property>
+  </action>
+  <action name="actionCustomQuery">
+   <property name="text"><string>SQL-запрос</string></property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
